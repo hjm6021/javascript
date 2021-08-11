@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <!-- <script>
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     const star = document.querySelector('h1')
+        //     star.style.position = 'absolute'
+
+        //     let [x, y] = [10, 10]
+        //     const block = 20
+        //     const print = () => {
+        //         star.style.left = `${x * block}px`
+        //         star.style.top = `${y * block}px`
+        //     }
+        //     print()
+
+        //     const [left, up, right, down] = [37, 38, 39, 40]
+        //     document.body.addEventListener('keydown', (event) => {
+        //         switch (event.keyCode) {
+        //             case left:
+        //                 x -= 1
+        //                 break
+        //             case up:
+        //                 y -= 1
+        //                 break
+        //             case right:
+        //                 x += 1
+        //                 break
+        //             case down:
+        //                 y += 1
+        //                 break
+        //         }
+        //         console.log(event.keyCode)
+        //         print()
+        //     })
+        // })
+
+        // const listner = (event) => {
+        //     const length = event.currentTarget.value.length
+        //     const h1 = document.querySelector('h1')
+        //     h1.textContent = `글자 수 : ${length}`
+        // }
+
+        // const listner = function (event) {
+        //     const length = this.value.length
+        //     const h1 = document.querySelector('h1')
+        //     h1.textContent = `글자 수 : ${length}`
+        // }
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const textarea = document.querySelector('textarea')
+        //     textarea.addEventListener('keyup', listner)
+        // })
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const input = document.querySelector('input')
+        //     const button = document.querySelector('button')
+        //     const p = document.querySelector('p')
+
+        //     button.addEventListener('click', () => {
+        //         const inch = Number(input.value)
+
+        //         if (isNaN(inch)) {
+        //             p.textContent = "숫자를 입력해주세요."
+        //             return
+        //         }
+
+        //         const cm = inch * 2.54
+        //         p.textContent = `${cm} cm`
+        //     })
+        // })
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // const input = document.querySelector('input')
+            // const p = document.querySelector('p')
+            // const isEmail = (value) => {
+            //     return (value.indexOf('@') > 1) && (value.split('@')[1].indexOf('.') > 1) 
+            // }
+
+            // input.addEventListener('keyup', (event) => {
+            //     const value = event.currentTarget.value
+            //     if(isEmail(value)) {
+            //         p.style.color = 'green'
+            //         p.textContent = `이메일 형식입니다 : ${value}`
+            //     } else {
+            //         p.style.color = 'red'
+            //         p.textContent = `이메일 형식이 아닙니다 : ${value}`
+            //     }
+            // })
+
+            // const select = document.querySelector('select')
+            // const p = document.querySelector('p')
+
+            // // select.addEventListener('change', () => {
+            // //     const options = event.currentTarget.options
+            // //     const index = event.currentTarget.options.selectedIndex
+
+            // //     p.textContent = `선택 : ${options[index].textContent}`
+            // // })
+
+            // select.addEventListener('change', (event) => {
+            //     const options = event.currentTarget.options
+            //     const list = []
+
+            //     for(const option of options) {
+            //         if(option.selected) {
+            //             list.push(option.textContent)
+            //         }
+            //     }
+            //     p.textContent = `선택 : ${list.join(', ')}`
+            // })
+
+            // let 현재값
+            // let 변환상수 = 10
+
+            // const select = document.querySelector('select')
+            // const input = document.querySelector('input')
+            // const span = document.querySelector('span')
+
+            // const calculate = () => {
+            //     span.textContent = (현재값 * 변환상수).toFixed(2)
+            // }
+
+            // select.addEventListener('change', (event) => {
+            //     const options = event.currentTarget.options
+            //     const index = event.currentTarget.options.selectedIndex
+            //     변환상수 = Number(options[index].value)
+            //     calculate()
+            // })
+
+            // input.addEventListener('keyup', (event) => {
+            //     현재값 = Number(event.currentTarget.value)
+            // })
+            // calculate()
+
+            // let [timer, timerID] = [0, 0]
+            // const h1 = document.querySelector('h1')
+            // const checkbox = document.querySelector('input')
+            // const button = document.querySelector('button')
+
+            // checkbox.addEventListener('change', (event) => {
+            //     if(event.currentTarget.checked) {
+            //         timerID = setInterval(() => {
+            //             timer += 0.1
+            //             h1.textContent = `${timer.toFixed(2)}초`
+            //         }, 100);
+            //     }
+            // })
+
+            // button.addEventListener('click', (event) => {
+            //     clearInterval(timerID)
+            //     timer = 0
+            // })
+
+            // const output = document.querySelector('#output')
+            // const radios = document.querySelectorAll('[name=pet]')
+
+            // radios.forEach((radio) => {
+            //     radio.addEventListener('change', (event) => {
+            //         const current = event.currentTarget
+            //         if (current.checked) {
+            //             output.textContent = `좋아하는 애완동물은 ${current.value}이시군요!`
+            //         }
+            //     })
+            // })
+
+            // const imgs = document.querySelectorAll('img')
+
+            // imgs.forEach((img) => {
+            //     img.addEventListener('contextmenu', (event) => {
+            //         console.log(event)
+            //         event.preventDefault()
+            //     })
+            // })
+
+            // let status = false
+
+            // const checkbox = document.querySelector('input')
+            // checkbox.addEventListener('change', (event) => [
+            //     status = event.currentTarget.checked
+            // ])
+
+            // const link = document.querySelector('a')
+            // link.addEventListener('click', (event) => {
+            //     if (!status) {
+            //         event.preventDefault()
+            //     }
+            // })
+        })
+    </script> -->
+</head>
+<body>
+    <!-- <h1>글자 수 : </h1>
+    <textarea name="" id="" cols="30" rows="10"></textarea> -->
+
+    <!-- <input type="text">inch<br>
+    <button>계산</button>
+    <p></p> -->
+
+    <!-- <input type="text">
+    <p></p> -->
+
+    <!-- <select multiple>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>오뎅</option>
+        <option>튀김</option>
+    </select>
+    <p>선택 : 없음</p> -->
+
+    <!-- <input type="text"> cm =
+    <span></span>
+    <select>
+        <option value="10">mm</option>
+        <option value="0.01">m</option>
+        <option value="0.393701">inch</option>
+    </select> -->
+
+    <!-- <input type="checkbox">
+    <span>타이머 활성화</span>
+    <button>타이머 비활성화</button>
+    <h1>0초</h1> -->
+
+    <!-- <h3># 좋아하는 애완동물을 선택해주세요</h3>
+    <input type="radio" name="pet" value="강아지">
+    <span>강아지</span>
+    <input type="radio" name="pet" value="고양이">
+    <span>고양이</span>
+    <input type="radio" name="pet" value="햄스터">
+    <span>햄스터</span>
+    <input type="radio" name="pet" value="기타">
+    <span>기타</span>
+    <hr>
+    <h3 id="output"></h3> -->
+
+    <!-- <img src="http://placekitten.com/300/300" alt="">
+    <img src="http://placekitten.com/300/300" alt=""> -->
+
+    <!-- <input type="checkbox">
+    <span>링크 활성화</span>
+    <br>
+    <a href="http://hanbit.co.kr">한빛미디어</a> -->
+
+    <!-- 예제 1 : 할 일 목록 만들기 -->
+    <h1>할 일 목록</h1>
+    <input id="todo">
+    <button id="add-button">추가하기</button>
+    <div id="todo-list">
+
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const input = document.querySelector('#todo')
+        const todoList = document.querySelector('#todo-list')
+        const addButton = document.querySelector('#add-button')
+
+        let keyCount = 0
+
+        const addTodo = () => {
+            if (input.value.trim() === '') {
+                alert('할 일을 입력해주세요.')
+                return
+            }
+
+            const item = document.createElement('div')
+            const checkbox = document.createElement('input')
+            const text = document.createElement('span')
+            const button = document.createElement('button')
+
+            const key = keyCount
+            keyCount += 1
+
+            item.setAttribute('data-key', key)
+            item.appendChild(checkbox)
+            item.appendChild(text)
+            item.appendChild(button)
+            todoList.appendChild(item)
+
+            checkbox.type = 'checkbox'
+            checkbox.addEventListener('change', (event) => {
+                item.style.textDecoration = event.target.checked ? 'line-through' : ''
+            })
+
+            text.textContent = input.value
+
+            button.textContent = '제거하기'
+            button.addEventListener('click', (event) => {
+                removeTodo(key)
+            })
+
+            input.value = ''
+        }
+
+        const removeTodo = (key) => {
+            const item = document.querySelector(`[data-key="${key}"]`)
+            todoList.removeChild(item)
+        }
+
+        addButton.addEventListener('click', addTodo)
+        input.addEventListener('keyup', (event) => {
+            const ENTER = 13
+            if(event.keyCode === ENTER) {
+                addTodo()
+            }
+        })
+    })
+</script>
+</html>

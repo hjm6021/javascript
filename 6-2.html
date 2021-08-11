@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <!-- <script>
+        // const a = []
+        // a.sample = 10
+        // console.log(a)
+        // console.log(a.sample)
+
+        // function b () {}
+        // b.sample = 10
+
+        // Number.prototype.power = function (n=2) {
+        //     return this.valueOf() ** n
+        // }
+
+        // const a = 2
+        // console.log('a.power():', a.power())
+        // console.log('a.power(3):', a.power(3))
+        // console.log('a.power(4):', a.power(4))
+
+        // String.prototype.contain = function (data) {
+        //     return this.indexOf(data) >= 0
+        // }
+
+        // Array.prototype.contain = function (data) {
+        //     return this.indexOf(data) >= 0
+        // }
+
+        // const a = '안녕하세요'
+        // console.log('안녕 in 안녕하세요:', a.contain('안녕'))
+        // console.log('없어 in 안녕하세요:', a.contain('없어'))
+
+        // const b = [273, 32, 103, 57, 52]
+        // console.log('273 in [273, 32, 103, 57, 52]', b.contain(273))
+        // console.log('0 in [273, 32, 103, 57, 52]', b.contain(0))
+
+        // const data = [
+        //     {
+        //         name: '혼자 공부하는 파이썬',
+        //         price: 18000,
+        //         publisher: "한빛미디어"
+        //     }, {
+        //         name: "HTML5 웹 프로그래밍 입문",
+        //         price: 26000,
+        //         publisher: '한빛아카데미'
+        //     }
+        // ]
+
+        // console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data, null, 2))
+
+        // json = JSON.stringify(data)
+        // console.log(JSON.parse(json))
+
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        const books = [
+            {
+                name: '혼자 공부하는 파이썬',
+                price: 18000,
+                publisher: "한빛미디어"
+            }, {
+                name: "HTML5 웹 프로그래밍 입문",
+                price: 26000,
+                publisher: '한빛아카데미'
+            }, {
+                name: "머신러닝 딥러닝 실전 개발 입문",
+                price: 30000,
+                publisher: '위키북스'
+            }, {
+                name: "딥러닝을 위한 수학",
+                price: 25000,
+                publisher: '위키북스'
+            }
+        ]
+
+        const output = _.sortBy(books, (book) => book.price)
+        console.log(JSON.stringify(output, null, 2))
+    </script> -->
+
+    <script>
+        // 문제 1
+        // Number.prototype.원 = function () {
+        //     return this.valueOf() + "원"
+        // }
+        // const num = 52000
+
+        // console.log(num.원())
+
+        // 문제 2
+        // function printLang(code) {
+        //     return printLang._lang[code]
+        // }
+
+        // printLang._lang = {
+        //     ko: '한국어',
+        //     en: '영어',
+        //     ja: '일본어',
+        //     fr: '프랑스어',
+        //     es: '스페인어'
+        // }
+
+        // console.log('printLang("ko"):', printLang('ko'))
+        // console.log('printLang("en"):', printLang('en'))
+        // console.log(typeof printLang)
+
+        // 문제 3
+        // const degree = 90
+
+        // function getSinDeg(deg) {
+        //     var rad = deg * Math.PI/180;
+        //     return Math.sin(rad);
+        // }
+
+        // console.log(getSinDeg(degree))
+
+        // 문제 4
+        const books = [
+            {
+                name: '혼자 공부하는 파이썬',
+                price: 18000,
+                publisher: "한빛미디어"
+            }, {
+                name: "HTML5 웹 프로그래밍 입문",
+                price: 26000,
+                publisher: '한빛아카데미'
+            }, {
+                name: "머신러닝 딥러닝 실전 개발 입문",
+                price: 30000,
+                publisher: '위키북스'
+            }, {
+                name: "딥러닝을 위한 수학",
+                price: 25000,
+                publisher: '위키북스'
+            }
+        ]
+
+        console.log(_.orderBy(books, ['name'], ['asc']))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <script>
+        const object = {
+            name: '혼자 공부하는 파이썬',
+            price: 18000,
+            publisher: '한빛미디어'
+        }
+
+        // if(object.name !== undefined) {
+        //     console.log('name 속성이 있습니다.')
+        // } else {
+        //     console.log('name 속성이 없습니다.')
+        // }
+        // if(object.author !== undefined) {
+        //     console.log('author 속성이 있습니다.')
+        // } else {
+        //     console.log('author 속성이 없습니다.')
+        // }
+
+        // object.name = object.name !== undefined ? object.name : '제목 미정'
+        // object.author = object.author !== undefined ? object.author : '저자 미상'
+
+        // console.log(JSON.stringify(object, null, 2))
+
+        // const {name, price} = object
+        // console.log(name, price)
+
+        // const {a=name, b=price} = object
+        // console.log(name, price)
+
+        // const list_0101 = ['우유', '식빵']
+        // // const list_0102 = [...list_0101]
+
+        // // list_0102.push('고구마')
+        // // list_0102.push('토마토')
+
+        // const list_0102 = ['고구마', ...list_0101, '토마토']
+
+        // console.log(list_0101)
+        // console.log(list_0102)
+
+        const 구름 = {
+            이름: '구름',
+            나이: 6,
+            종족: '강아지'
+        }
+
+        const 별 = 구름
+        별.이름 = '별'
+        별.나이 = 1
+
+        console.log(JSON.stringify(구름, null, 2))
+        console.log(JSON.stringify(별, null, 2))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

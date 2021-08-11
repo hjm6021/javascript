@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        // const product = {
+        //     제품명: '7D 건조 광고',
+        //     유형: '당절임',
+        //     성분: '망고, 설탕, 메타중아황산나트륨, 치자황색소',
+        //     원산지: '필리핀'
+        // }
+
+        // console.log(product['성분'])
+        // console.log(product.원산지)
+
+        // const pet = {
+        //     name: '구름',
+        //     eat: function (food) {
+        //         alert(this.name + '은/는 ' + food + '을/를 먹습니다.')
+        //     }
+        // }
+
+        // pet.eat('밥')
+
+        // const student = {}
+        // student.이름 = "윤인성"
+        // student.취미 = "악기"
+        // student.장래희망 = "생명공학자"
+
+        // delete student.장래희망
+
+        // console.log(JSON.stringify(student, null, 2))
+
+        // const test = {
+        //     a: function () {
+        //         console.log(this)
+        //     },
+        //     b: () => {
+        //         console.log(this)
+        //     }
+        // }
+        // test.a()
+        // test.b()
+
+        // 문제 1
+        // const book = {
+        //     name : "혼자 공부하는 파이썬",
+        //     price : 18000,
+        //     publisher : "한빛미디어"
+        // }
+
+        // 문제 2
+        // add book["language"] = "한국어"
+        // book.add("language", '한국어')
+        // book["language"] = "한국어"
+        // book["language"] add "한국어"
+        // console.log(book)
+
+        // 문제 3
+        const object = {
+            ko: "빵",
+            en: "bread",
+            ja: "パン",
+            fr: "pain",
+            es: "pan",
+            lang: {
+                ko: "한국어",
+                en: "영어",
+                ja: "일본어",
+                fr: "프랑스어",
+                es: "스페인어"
+            },
+            print: function (lang) {
+                console.log(`${this.ko}는 ${this.lang[lang]}로 ${this[lang]}입니다.`)
+            }
+        }
+
+        object.print('es')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
