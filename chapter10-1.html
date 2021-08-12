@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10장 연습문제 1</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // 문제 1
+        class App extends React.Component {
+            constructor (props) {
+                super(props)
+                this.state = {
+                    count: 0,
+                }
+                this.handleCheck = this.handleCheck.bind(this)
+                this.initialize = this.initialize.bind(this)
+            }
+
+            render () {
+                return <div>
+                    <input type="checkbox" onClick={this.handleCheck}/> 타이머 활성화<br/>
+                    <button onClick={this.initialize}>타이머 초기화하기</button>
+                    <h1>{this.state.count.toFixed(2)}초</h1>
+                    </div>
+            }
+
+            handleCheck (event) {
+                if(event.target.checked) {
+                    this.timerId = setInterval(() => {
+                        this.setState({
+                            count: this.state.count + 0.1
+                        })
+                    }, 100)
+                } else {
+                    clearInterval(this.timerId)
+                }
+            }
+
+            initialize (event) {
+                this.setState({
+                    count: 0
+                })
+            }
+        }
+
+        const container = document.getElementById('root')
+        ReactDOM.render(<App />, container)
+    </script>
+</body>
+</html>
